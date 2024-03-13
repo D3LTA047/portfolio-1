@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IT Engineer</p>
+                <h1>Hi, I'm<span> Tejaswini </span><br>Kale from India</h1>
+
+            </div>
+        </div>
+    </div>
+
+<!-- /-------- about --------/ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./selfImage.jpg" alt="self image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm a 2nd year student pursuing graduation in BTech IT Engineering. I have passion for computer programming.</p>
+                    <p>Aspiring for a challenging career in Software Development as to use my learnt skills and getting involved with new technologies that can help me to improve my technical skills.</p>
+                    
+                    <div class="tab-title">
+                        <p class="tab-link I" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link II" onclick="opentab('education')">Education</p>
+                        <p class="tab-link III" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-content I" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML | CSS | JavaScript</li>
+                            <li><span>Problem Solving</span><br>Data Structures & Algorithm</li>
+                            <li><span>Programming Languages</span><br>Java | C | C++ | Python</li>
+                            <li><span>Knowledge</span><br>OOPs | Computer Networks </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content II" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>BTech IT at MKSSS's Cummins College of Engineering For Women <br>CGPA : 9.16</li>
+                            <li><span>2020 - 2022</span><br>HSC at Mudhoji High School & Jr. College <br>Score : 97.93 %tile | 84.33 %</li>
+                            <li><span>2019 - 2020</span><br>SSC at Mudhoji High School & Jr. College <br>Score : 93.60 %</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content III" id="experience">
+                        <ul>
+                            <li><span>Jan'2024 - Present</span><br>Bharat Intern for Web Development</li>
+                            <li><span>Open to Work</span><br>Looking for an Internship</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------services-------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Embarking on the journey of web development as a student, I am passionate about translating creative ideas into functional websites. Proficient in front-end and back-end technologies, I bring a fresh perspective and a hunger for learning to every project.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Problem Solving</h2>
+                    <p>As a student passionate about Data Structures and Algorithms, I offer problem-solving services to tackle complex computational challenges. With a strong foundation in DSA, I analyze problems, design efficient algorithms, and implement robust solutions. I'm ready to dive into the world of problem-solving.</p>
+                   
+                </div>
+
+                <div>
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    <h2>Google Cloud</h2>
+                    <p>With a strong grasp of cloud technologies, I have actively participated in various learning programs such as Google Cloud Arcade Facilitator Program, acquiring practical skills and knowledge in cloud computing.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./portfolio.jpg" alt="Portfolio">
+                    <div class="layer">
+                        <h2>Portfolio Website</h2>
+                        <p>Responsive portfolio website featuring HTML, CSS, and JavaScript for a dynamic and engaging user experience, showcasing skills and projects</p>
+                        <a href="https://github.com/tejaswini1304/portfolio"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Amazon.png" alt="Amazon Clone">
+                    <div class="layer">
+                        <h2>Amazon Clone</h2>
+                        <p>Basic Amazon clone project built with HTML and CSS, faithfully recreating the core design elements</p>
+                        <a href="https://github.com/tejaswini1304/Amazon-clone"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./gfg.png" alt="Top 200 at GFG">
+                    <div class="layer">
+                        <h2>Top 400 at GFG</h2>
+                        <p>Consistently securing a top 400 rank on Geeks for Geeks through proficient coding and problem-solving in DSA</p>
+                        <a href="https://auth.geeksforgeeks.org/user/kaletejaskbri"><i class="fa-regular fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="certifications">
+                <a href="https://drive.google.com/drive/folders/1IZM4dIQrKQnMxI2hQ0xlyBmUbV6vlRFK?usp=drive_link">Certifications</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-1">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><a href="kaletejaswini1304@gmail.com"><i class="fa-solid fa-envelope"></i> kaletejaswini1304@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7887740810</p>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/tejaswini-kale"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/tejaswini1304"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                        <a href="./Tejaswini_Kale_Resume.pdf" class="resume">Download CV</a>
+                </div>
+                <div class="contact-2">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Tejaswini. Made with <i class="fa-solid fa-heart"></i></p>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
